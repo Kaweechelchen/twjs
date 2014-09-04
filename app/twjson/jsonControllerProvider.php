@@ -44,7 +44,7 @@
 
             $ctr->get( '/', function( Application $app ) {
 
-                return 'you need to provide a twitter handle. Example: https://twjs.herokuapp.com/syn2cat';
+                return 'you need to provide a twitter handle. Example: <a href="https://twjs.herokuapp.com/syn2cat">https://twjs.herokuapp.com/syn2cat</a>';
 
             });
 
