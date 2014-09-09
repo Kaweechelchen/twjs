@@ -17,6 +17,7 @@ Gathering twitter timelines as json without the oAuth fuzz
 * Get an [Heroku account](https://id.heroku.com/signup)
 * install the [heroku toolbelt](https://toolbelt.heroku.com/)
 * create a new heoku app using `heroku create`
+* Create a [new Twitter application](https://apps.twitter.com/app/new) and get API keys
 * set the environment variables for your app
 <pre>
     heroku config:set apikey=API_KEY_GOES_HERE
