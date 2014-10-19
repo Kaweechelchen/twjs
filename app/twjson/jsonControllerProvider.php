@@ -62,13 +62,6 @@
                 'oauth_access_token_secret' => getenv('accesstokensecret')
             );
 
-            $settings = array(
-                'consumer_key'              => 'rPQ1DtNK2K0v1ZooarswsqRMc',
-                'consumer_secret'           => 'It6qy9Hz6dcZiipmBB2SH1c7SuEHZjBrUarM781e2oeC3tA4MT',
-                'oauth_access_token'        => '260828691-LSkn4brLVTrIYhru6TlLT5kx6EWDKZHqtqDcoMUI',
-                'oauth_access_token_secret' => '0Yhi2UhCA0kgEoh7PXunNu3pFFMcx7VePnnm50UJ0nQhe'
-            );
-
             $twitter = new TwitterAPIExchange( $settings );
             $twitterJSON = json_decode(
                 $twitter->setGetfield( $getfield )
