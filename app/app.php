@@ -7,8 +7,6 @@
 
     $app = new Silex\Application();
 
-    $app[ 'debug' ] = true;
-
     $app->mount( '/2014/', new twjson\jsonControllerProvider() );
 
     $app->after(function (Request $request, Response $response) {

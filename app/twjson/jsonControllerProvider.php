@@ -131,7 +131,7 @@
 
             $ctr->get( '/', function( Application $app ) {
 
-                return 'you need to provide a twitter handle. Example: <a href="https://twjs.herokuapp.com/syn2cat">https://twjs.herokuapp.com/syn2cat</a>';
+                return $app->redirect('http://icanhas.cheezburger.com/');
 
             });
 
