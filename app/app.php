@@ -9,7 +9,7 @@
 
     $app[ 'debug' ] = true;
 
-    $app->mount( '/', new twjson\jsonControllerProvider() );
+    $app->mount( '/2014/', new twjson\jsonControllerProvider() );
 
     $app->after(function (Request $request, Response $response) {
 
