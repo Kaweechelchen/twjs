@@ -47,7 +47,7 @@
              */
 
             $url = 'https://api.twitter.com/1.1/search/tweets.json';
-            $getfield = "?q=$handle%20-RT&count=100&result_type=recent";
+            $getfield = "?q=$handle&count=100&result_type=recent";
             if ( $sinceId != 0 ) {
 
                 $getfield .= "&since_id=$sinceId";

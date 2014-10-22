@@ -9,6 +9,12 @@
 
     $app->mount( '/2014/', new twjson\jsonControllerProvider() );
 
+    $app->mount( '/', function( Application $app ) {
+
+        return $app->redirect('http://icanhas.cheezburger.com/');
+
+    });
+
     $app->after(function (Request $request, Response $response) {
 
         $response->headers->set('Access-Control-Allow-Origin', '*');
